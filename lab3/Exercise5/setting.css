@@ -1,0 +1,25 @@
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+A:visited {
+    color: rgb(243, 3, 171);
+}
+A:link{
+    color:rgb(23, 8, 243);
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+p.header{
+    font-size: 20px;
+}

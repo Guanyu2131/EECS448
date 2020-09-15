@@ -1,0 +1,49 @@
+body{
+    background-image: url(back.jpg)
+}
+
+h1{
+    text-align: center;
+    width: 800px;
+    height: 60px;
+    font-size: 40px;
+    border: 15px solid blue;
+    background-color: yellow;
+    margin: 20px auto;
+    margin-bottom: 10px;
+}
+
+table{
+    text-align: center;
+}
+
+table.recipt{
+    text-align: left;
+    margin-top: 100px;
+    background-color: lightgreen;
+}
+ 
+img{
+    height: 180px;
+    width: 240px;
+}
+
+td.ship{
+    border: none;
+}
+
+tr.title{
+    color: turquoise;
+}
+
+tr.text{
+    color: rgb(0, 253, 0);
+}
+
+tr.price{
+    color:red;
+}
+
+td.inside{
+    background-color: rgb(205, 116, 240);
+}

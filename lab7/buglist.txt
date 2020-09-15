@@ -1,0 +1,4 @@
+Bugs: 1. isEmpty() is not working, it always return True
+      2. addBack() is not add elements to the back
+      3. removeBack() is not work at all and it always return false
+      4. removeFront() is not work at all and it always return false

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>User Posts</title>
+  </head>
+  <body>
+    <h1>Exericse 6 </h1>
+    <h2>Select a user</h2>
+    <form action="vup.php" method="get">
+      <?php
+        $servername = "mysql.eecs.ku.edu";
+        $username = "g358l675";
+        $password = "daey7jei";
+        $mysqli = new mysqli($servername, $username, $password, $username);
+
+        /* check connection */
+        if ($mysqli->connect_errno) {
+          printf("Connect failed: %s\n", $mysqli->connect_error);
+          exit();
+        }
+
+        $query = "SELECT * FROM Users";
+        $result = $mysqli->query($query);
+        if($result->num_rows == 0){
+          echo "We have no posts yet.";
+        }
+        else{
+      ?>
+      <select name ="user">
+      <?php
+        while ($row = $result->fetch_assoc()) {
+      ?>
+        <option type = "text" value="<?php echo $row["user_id"]; ?>"> <?php echo $row["user_id"]; ?> </option>
+      <?php } ?>
+      </select>
+      <br>
+      <input type="submit">
+      <?php } $mysqli->close(); ?>
+      <br>
+      <a href="https://people.eecs.ku.edu/~g358l675/eecs448/lab5.html">Back</a>
+    </form>
+  </body>
+</html>

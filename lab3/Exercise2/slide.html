@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Slide Show</title>
+        <link href="background.css" rel="stylesheet">
+        <style>
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+
+    </head>
+    <body>
+        <script type="text/javascript" src="FandP.js"></script>
+        <h2 class="Guanyu-slide">Mathematicians</h2>
+        <div class="Guanyu-slide Guanyu-display-container">
+            <img src="1.jpg" class="slides" width="800" height="500">
+            <img src="2.jpg" class="slides" width="800" height="500">
+            <img src="3.jpg" class="slides" width="800" height="500">
+            <img src="4.jpg" class="slides" width="800" height="500">
+            <img src="5.jpg" class="slides" width="800" height="500">
+        </div>
+        <div class="wrapper">
+            <button class="button" onclick="plus(-1)">Previous slide</button>
+            <br>
+            <br>
+            <button class="button" onclick="plus(1)">Next slide</button>
+        </div>        
+        <script> showPicture(1) </script>
+    </body>
+</html>

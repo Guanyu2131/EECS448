@@ -1,0 +1,43 @@
+h1{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40pt;
+}
+
+h1:hover{
+  color:yellow;
+}
+
+body{
+  background-image:url(buttom.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+a{
+  text-align: center;
+}
+
+#kk{
+  border:5px solid black;
+  height: 400px;
+  width: 600px;
+  margin: 0px auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10;
+  text-align: center;
+}
+
+p.blue{
+  color: rgb(8, 238, 200);
+}
+
+p.young{
+  color: rgb(114, 245, 7);
+}
+
+p.black{
+  color:rgb(222, 247, 4);
+}
