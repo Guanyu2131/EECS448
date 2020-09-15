@@ -1,4 +1,4 @@
-# EECS448
+# EECS448 Software Engineering
 
 ## Instructor
 Paul Kline
